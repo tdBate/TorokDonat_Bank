@@ -8,17 +8,17 @@ namespace Bank
 {
 	internal class CreditAccount : BankAccount
 	{
-		double creditlimit;
+		double creditLimit;
 
-		public double Creditlimit { get; }
-		public CreditAccount(Owner owner, double creditlimit) : base(owner)
+		public double CreditLimit { get=> creditLimit; }
+		public CreditAccount(Owner owner, double creditLimit) : base(owner)
 		{
-			this.creditlimit = creditlimit;
+			this.creditLimit = creditLimit;
 		}
 
 		public override bool Withdraw(double amount)
 		{
-			if(this.Balance - amount >= Creditlimit)
+			if(this.Balance - amount >= CreditLimit)
 			{
 				this.Balance -= amount;
 				return true;

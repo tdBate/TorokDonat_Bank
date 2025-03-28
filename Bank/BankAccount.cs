@@ -11,7 +11,7 @@ namespace Bank
 		double balance;
 
 		public double Balance { get; protected set; }
-		protected BankAccount(Owner owner) : base(owner)
+		public BankAccount(Owner owner) : base(owner)
 		{
 		}
 

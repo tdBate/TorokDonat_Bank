@@ -8,7 +8,7 @@ namespace Bank
 {
 	internal class SavingsAccount : BankAccount
 	{
-		static double baseInterest;
+		static double baseInterest=0.1;
 
 		public double Interest { get; set; }
 
